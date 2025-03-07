@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Hedelmäpeli</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hedelmäpeli</h1>
+            <p>Rahaa: <span id="balance">100</span>€</p>
+            
+            <div class="controls">
+                <label for="bet">Panos: </label>
+                <input type="number" id="bet" min="1" value="1" />
+                <button id="setBet">Muuta Panos</button>
+                <button id="play">Pelaa</button>
+            </div>
+            
+            <div class="slot-container">
+                <div class="reel" id="reel1">?</div>
+                <div class="reel" id="reel2">?</div>
+                <div class="reel" id="reel3">?</div>
+                <div class="reel" id="reel4">?</div>
+            </div>
+            
+            <div class="lock-buttons">
+                <button class="lock" id="lock1" disabled>Lukitse rulla 1</button>
+                <button class="lock" id="lock2" disabled>Lukitse rulla 2</button>
+                <button class="lock" id="lock3" disabled>Lukitse rulla 3</button>
+                <button class="lock" id="lock4" disabled>Lukitse rulla 4</button>
+            </div>
+            
+            <p id="status"></p>
+            <p id="voitto"></p>
+
+            <div class="infopanos">
+                <p>🍒🍒🍒🍒 = Panos * 3</p>
+                <p>🍐🍐🍐🍐 = Panos * 4</p>
+                <p>🍉🍉🍉🍉 = Panos * 5</p>
+                <p>🍎🍎🍎🍎 = Panos * 6</p>
+                <p>7️⃣7️⃣7️⃣7️⃣ = Panos * 10</p>
+                <p>(Kolme 7️⃣ = Panos * 5)</p>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
