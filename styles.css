@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #e2e2e2, #ffffff);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+h1 {
+    color: #2c7a7b;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#balance {
+    font-weight: bold;
+}
+
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    font-size: 1.1em;
+}
+
+.controls input[type="number"] {
+    padding: 8px;
+    font-size: 1.1em;
+    width: 80px;
+    margin: 0 10px;
+    border: 2px solid #2c7a7b;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(45deg, #2c7a7b, #285e61);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #285e61, #2c7a7b);
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+.slot-container,
+.lock-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.reel {
+    font-size: 2.5em;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: 2px solid #2c7a7b;
+    border-radius: 10px;
+    line-height: 70px;
+    background-color: #f9f9f9;
+    transition: background 0.3s ease; 
+}
+
+
+
+.lock {
+    background: linear-gradient(45deg, #e53e3e, #c53030);
+    font-size: 0.9em;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.lock:hover {
+    background: linear-gradient(45deg, #c53030, #e53e3e);
+}
+
+
+#status, #voitto {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #2c7a7b;
+}
+
+
+.infopanos {
+    margin-top: 20px;
+    border: 3px solid #2c7a7b;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
